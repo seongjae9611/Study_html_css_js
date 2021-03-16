@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    background: red;
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    padding: 20px;
+    display: inline;
+}
+
+span{
+    background: red;
+    margin: 30px;
+    padding: 100px;
+    /*인라인 요소는 마진과 패딩은 위아래는 들어가지 않는다.*/
+    display: block;
+    width: 100px;
+    height: 30px;
+}

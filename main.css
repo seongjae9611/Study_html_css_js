@@ -13,11 +13,7 @@ body{
     padding: 20px 0;
 }
 .container-left{
-    /*padding-top: 20px;
-    padding-bottom: 20px;
-    인터넷 강의에서는 .container의 padding부분을 지우고 주석처리 부분처럼 넣어도 웹페이지에서는 똑같이 구현이 된다고 말했는데 
-    실제로 해봤을 때는 헤더의 밑줄선 위치가 달라졌습니다. 이유가 무엇인가요?
-    */
+  
 }
 .logo{
     float: left;

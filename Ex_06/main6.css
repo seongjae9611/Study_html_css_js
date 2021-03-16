@@ -1,0 +1,8 @@
+kbd{
+    padding: 0 3px;
+    border-radius: 3px;
+    border-top: 2px solid rgb(240, 110, 150);
+    border-bottom: 2px solid rgb(240, 110, 240);
+    border-left: 2px solid rgb(140, 110, 110);
+    border-right: 2px solid rgb(10, 110, 800);
+}

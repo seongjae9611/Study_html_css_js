@@ -1,0 +1,12 @@
+u{
+    color: blue;
+}
+
+span{
+    text-decoration: underline;
+}
+code{
+    color: orange;
+    background: lightgray;
+    border: 1px solid orange;
+}
