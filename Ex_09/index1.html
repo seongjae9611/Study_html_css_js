@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main1.css">
+    <style>
+        .section{
+            width: 100px;
+            color: red;
+            background-color: blue;
+        }
+        #section{
+            height: 200px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+
+    <div id="section"></div>
+    <script>
+        const section = document.querySelector('.section');
+        const sectionId = document.getElementById('secton')
+    </script>
+    
+    <h2 title="이 부분은 제목2입니다.">제목2</h2>
+    <a href="https://google.com" title="Google.com">Google</a>
+    <div title="div 태그입니다.">DIV</div>
+
+    <br/><br/><br/><br/>
+
+    <div id="me" data-my-Name="성재" data-my-Age="26">성재</div>
+
+    <script>
+       const me = document.getElementById('me');
+       console.log(me.dataset.myName);
+       console.log(me.dataset.myAge);
+    </script>
+</body>
+</html>

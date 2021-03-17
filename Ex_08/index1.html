@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main1.css">
+</head>
+<body>
+    <table>
+        <caption>데이터 타입과 값</caption> 
+        <tr>
+            <th colspan="2" id="th-data">데이터</th>
+        </tr>
+        <tr>
+            <th abbr="Type" scope="col" headers="th-data">데이터 타입</th>
+            <th abbr="Value" scope="col" headers="th-data">데이터 값</th>
+        </tr>
+        <tr>
+            <td>알파벳</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <td>숫자</td>
+            <td>1</td>
+        </tr>
+    </table> <br/><br/><br/><br/>
+
+
+    <table>
+        <caption>데이터 타입과 값</caption>
+        <tr>
+            <th rowspan="2" id="th-data">데이터</th>
+            <th headers="" id="th-data" id="th-type">데이터 타입</th>
+            <td headers="" id="th-type">알파벳</td>
+            <td headers="" id="th-type">숫자</td>
+        </tr>
+        <tr>
+            <th headers="" id="th-data" id="th-value">데이터 값</th>
+            <td headers="" id="th-value">a</td>
+            <td headers="" id="th-value">1</td>
+        </tr>
+    </table> <br/><br/><br/><br/>
+    
+    <table>
+        <caption>데이터 타입과 값</caption>
+        <colgroup>
+            <col style="background-color: tomato;">
+            <col style="background-color: wheat;" span="2">
+            <col style="background-color: yellow;">
+        </colgroup>
+        <tr>
+            <th ></th>
+            <th>타입</th>
+            <th>값</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>알파벳</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>숫자</td>
+            <td>7</td>
+        </tr>
+    </table>
+</body>
+</html>

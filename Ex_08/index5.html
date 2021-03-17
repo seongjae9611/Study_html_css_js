@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main5.css">
+</head>
+<body>
+    <!-- 라벨 가능 요소를 참조 -->
+    <input type="checkbox" id="user-agreement" />
+    <label for="user-agreement">동의하십니까?</label>
+
+    <!-- 라벨 가능 요소를 포함 -->
+    <label
+        ><input type="checkbox" />동의하십니까?
+    </label>
+    <br/><br/><br/><br/><br/>
+    <label>
+        검색<input type="search">
+    </label>
+
+
+    <br/><br/><br/><br/><br/>
+
+    <label>
+        검색 <input type="search">
+    </label>
+    <br/><br/><br/><br/><br/>
+
+    <input type="submit" value="제출">
+    <button type="reset">초기화</button>
+    <br/><br/><br/><br/><br/>
+    
+    <button onclick="doit()">클릭하세요</button>
+        
+        <script>
+            function doit(){
+                alert('클릭했습니다.');
+            }
+        </script>
+    <br/><br/><br/><br/><br/>
+
+    <textarea rows="9" placeholder="설명을 입력하세요"></textarea>
+</body>
+</html>

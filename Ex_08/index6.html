@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main6.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+          <legend>Coffee Size</legend>
+          <label>
+              <input type="radio" name="size" value="tall" />
+              Tall
+          </label>
+          <label>
+              <input type="radio" name="size" value="grande" />
+              Grande
+          </label>
+          <label>
+              <input type="radio" name="size" value="venti" />
+              Venti
+          </label>
+        </fieldset>
+      </form>
+
+      <br/><br/><br/><br/>
+
+      <select name="Fruit">
+        <optgroup label="내가 좋아하는 과일">
+            <option label="Apple" value="Apple"></option>
+            <option>Orange</option>
+            <option>Banana</option>
+        </optgroup>
+        <optgroup label="내가 싫어하는 과일">
+            <option selected>Mango</option>
+            <option>Fineapple</option>
+        </optgroup>
+      </select>
+      <br/><br/><br/><br/>
+
+      <input type="text" list="fruits">
+
+      <datalist id="fruits">
+          <option>Apple</option>
+          <option>Orange</option>
+          <option>Banana</option>
+          <option>Mango</option>
+          <option>Fineapple</option>
+      </datalist>
+      <br/><br/><br/><br/>
+
+      <progress value="10" max="100"></progress>
+      <script>
+          const progress = document.querySelector('progress');
+          const intervakl = setInterval(function(){
+                progress.value += 10;
+                if(progress.value >=100) clearInterval(interval);
+          },1000)
+      </script>
+</body>
+</html>
