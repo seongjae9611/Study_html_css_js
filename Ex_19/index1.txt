@@ -1,0 +1,31 @@
+HTML
+<div class="container">
+  <div class="item item1">Good Job</div>
+  <div class="item item2">A</div>
+  <div class="item item3">Hello World</div>
+
+  
+</div>
+
+
+
+
+
+CSS
+.container{
+  border : 4px solid black;
+  display : flex;
+}
+.container .item{
+  color : white;
+  height : 100px;
+  background : blue;
+  border : 4px solid red;
+  border-radius : 10px;
+  flex-grow : 1;
+  flex-basis : 0;
+}
+
+.container .item3{
+  flex-grow : 2;
+}

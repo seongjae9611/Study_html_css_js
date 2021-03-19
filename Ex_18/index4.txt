@@ -1,0 +1,30 @@
+HTML
+<div class="box">
+  
+</div>
+
+
+CSS
+.box{
+  width : 100px;
+  height : 100px;
+  background : tomato;
+  border-radius : 10px;
+}
+.box:hover{
+  animation : my-animation 1s infinite alternate;
+}
+@keyframes my-animation{
+  0%{
+    width : 100px;
+    background : 
+  }
+  75%{
+    width 2000px;
+    background : blue
+  }
+  100%{
+    width : 500px;
+    background : yellow;
+  }
+}

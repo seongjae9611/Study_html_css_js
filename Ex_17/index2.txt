@@ -1,0 +1,84 @@
+HTML
+<div class="cards">
+  <div class="card">
+    <div class="face face-front">
+      <img src="https://heropy.blog/css/images/logo.png" alt="로고">
+    </div>
+    <div class="face face-back">
+      <img src="https://heropy.blog/css/images/vendor_icons/snowpack.png" alt="카드1">
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="face face-front">
+      <img src="https://heropy.blog/css/images/logo.png" alt="로고">
+    </div>
+    <div class="face face-back">
+      <img src="https://heropy.blog/css/images/vendor_icons/pixi.png" alt="카드2">
+    </div>
+  </div>
+  
+    <div class="card">
+    <div class="face face-front">
+      <img src="https://heropy.blog/css/images/logo.png" alt="로고">
+    </div>
+    <div class="face face-back">
+      <img src="https://heropy.blog/css/images/vendor_icons/postman.png" alt="카드3">
+    </div>
+  </div>
+  
+  
+</div>
+
+
+
+
+CSS
+.cards{
+  padding : 20px;
+}
+.card{
+  width : 150px;
+  height : 220px;
+  position : relative;
+  perspective : 600px;
+  float : left;
+  margin : 15px;
+}
+.card:last-child{
+  margin-right : 0;
+}
+.card .face{
+  width : 150px;
+  height : 220px;
+  border : 1px solid lightgray;
+  border-radius : 10px;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  transition : 1s;
+  position : absolute;
+  backface-visibility : hidden;
+  background-color : white;
+}
+.card .face-front{
+  background-image: url("https://heropy.blog/css/images/pattern.png");
+  transform : rotateY(0deg);
+}
+.card:active .face-front{
+  transform : rotateY(-180deg);
+}
+.card .face-back{
+  transform : rotateY(180deg);
+}
+.card:active .face-back{
+  transform : rotateY(0deg);
+}
+.card .face-front img{
+  width : 90px;
+  filter : grayscale();
+  opacity : .7;
+}
+.card .face-back img{
+  height : 120px;
+}

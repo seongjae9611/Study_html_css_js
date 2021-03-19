@@ -1,0 +1,51 @@
+HTML
+<div class ="box box1">0s</div>
+<div class ="box box2">1s</div>
+<div class ="box box3">-1s</div>
+
+
+
+CSS
+.box{
+  width : 150px;
+  height : 200px;
+  border-radius : 10px;
+  margin : 10px;
+  color : white;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+}
+.box1{
+  background : red;
+}
+.box2{
+  background : blue;
+}
+.box3{
+  background : black;
+}
+.box1:hover{
+  animation : size-up 1s alternate;
+  animation-timing-function : linear;
+  animation-delay : 0s;
+}
+.box2:hover{
+  animation : size-up 1s alternate;
+  animation-timing-function : linear;
+  animation-delay : 1s;
+}
+.box3:hover{
+  animation : size-up 1s alternate;
+  animation-timing-function : linear;
+  animation-delay : -1s;
+}
+
+@keyframes size-up{
+  0%{
+    width : 200px;
+  }
+  100%{
+    width : 500px;
+  }
+}
