@@ -1,0 +1,30 @@
+SCSS
+$fruits : apple, orange, banana, mango;
+
+.fruits{
+    @each $fruit in $fruits{
+        $index : index($fruits, $fruit);
+        li:nth-child(#{$index}){
+            left : 50px * $index;
+            background : url("/images/#{$fruit}.png");
+        }
+    }
+}
+
+CSS
+.fruits li:nth-child(1) {
+  left: 50px;
+  background: url("/images/apple.png");
+}
+.fruits li:nth-child(2) {
+  left: 100px;
+  background: url("/images/orange.png");
+}
+.fruits li:nth-child(3) {
+  left: 150px;
+  background: url("/images/banana.png");
+}
+.fruits li:nth-child(4) {
+  left: 200px;
+  background: url("/images/mango.png");
+}

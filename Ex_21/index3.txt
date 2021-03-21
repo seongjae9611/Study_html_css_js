@@ -1,0 +1,32 @@
+SCSS
+@function columns($number: 1, $columns: 12, $width: 1200px) {
+    @return $width * ($number / $columns);
+}
+
+.containrer{
+    $width : 1200px;
+    width : $width;
+    .item:nth-child(1){
+        width : columns();       
+    }
+    .item:nth-child(2){
+        width : columns(8, $width);
+    }
+    .item:nth-child(3){
+        width : columns(3);
+    }
+}
+
+CSS
+.containrer {
+  width: 1200px;
+}
+.containrer .item:nth-child(1) {
+  width: 100px;
+}
+.containrer .item:nth-child(2) {
+  width: 8;
+}
+.containrer .item:nth-child(3) {
+  width: 300px;
+}

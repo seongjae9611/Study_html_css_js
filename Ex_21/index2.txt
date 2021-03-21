@@ -1,0 +1,32 @@
+SCSS
+@mixin icon ($url){
+    &::after{
+        content : $url;
+        @content; 
+    }
+}
+.box1{
+    @include icon("image/icon1.png");
+}
+
+.box2{
+    @include icon("image/icon2.png"){
+        dipslay : block;
+        opsition : absolute;
+        width : 100px;
+        height : 100px;
+    };
+}
+
+CSS
+.box1::after {
+  content: "image/icon1.png";
+}
+
+.box2::after {
+  content: "image/icon2.png";
+  dipslay: block;
+  opsition: absolute;
+  width: 100px;
+  height: 100px;
+}

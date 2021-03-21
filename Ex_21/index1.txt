@@ -1,0 +1,23 @@
+SCSS
+@mixin var ($w, $h, $bg...){
+    width : $w;
+    height : $h;
+    background : $bg;
+}
+
+.box{
+    @include var (
+    100px,
+    200px,
+    ulr("image/a.png") no-repeat 10px 20px,
+    ulr("image/b.png") no-repeat
+    ulr("image/c.png")
+    );
+}
+
+CSS
+.box {
+  width: 100px;
+  height: 200px;
+  background: ulr("image/a.png") no-repeat 10px 20px, ulr("image/b.png") no-repeat ulr("image/c.png");
+}

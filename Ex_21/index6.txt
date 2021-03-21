@@ -1,0 +1,31 @@
+SCSS
+$fruits-data:(
+    aplle : korea,
+    orange : china,
+    banana : japan
+);
+
+@each $fruit, $country in $fruits-data{
+    $fruits-data--key-list : map-keys($fruits-data);
+    $index : index($fruits-data--key-list, $fruit);
+    .box-#{$fruit}{
+        width : 100px * $index;
+        background : url("/image/#{$country}.png");
+    }
+}
+
+CSS
+.box-aplle {
+  width: 100px;
+  background: url("/image/korea.png");
+}
+
+.box-orange {
+  width: 200px;
+  background: url("/image/china.png");
+}
+
+.box-banana {
+  width: 300px;
+  background: url("/image/japan.png");
+}
