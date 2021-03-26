@@ -38,11 +38,11 @@ async function login(event) {
 }
 
 function bindLoginButton(){
-    const form = document.querySelector('#from-login')
+    const form = document.querySelector('#from-login');
     form.addEventListener('submit', login);
 }
 
-function main{
+function main(){
     //버튼에 이벤트 연결
     bindLoginButton();
 

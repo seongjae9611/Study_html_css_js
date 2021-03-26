@@ -4,7 +4,7 @@ function getToken(){
 
 async function getUserByToken(token){
     try{
-        const res = await axios.get('htps://api.arktube.tv/v1/me', {
+        const res = await axios.get('https://api.arktube.tv/v1/me', {
             headers : {
                 Authorization : `Bearer ${token}`
             }
