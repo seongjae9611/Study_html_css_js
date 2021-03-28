@@ -1,4 +1,104 @@
-        /* VISUAL */
+        /* HEADER */
+        header {
+            
+        }
+        
+        header .inner {
+            max-width: none;
+            height: auto;
+            padding: 0  20px;
+            
+        }
+        
+        header .main-group {
+            float : none;
+            display: block;
+        }
+
+        header .logo {
+            padding: 20px;
+        }
+        
+        header .logo a {
+          
+        }
+        
+        header .logo a:hover {
+           
+        }
+        
+        header .main-menu {
+            float : none;
+            display: block;
+            border-top: 1px solid #e3e3e3;
+        }
+        
+        header .main-menu .toggle {
+
+        }
+
+        header .main-menu li {
+            
+        }
+        
+        header .main-menu li a {
+            border-top: 1px solid #e3e3e3;
+        }
+        
+        header .main-menu li a:hover{
+            
+        }
+        
+        header .sub-group {
+            float : none;
+            display: block;
+            
+        }
+        
+        header .sub-group .toggle {
+            
+        }
+
+        header .btn-group {
+           display : block;
+        }
+        
+        header .btn-group .sign-in {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        header .btn-group .sign-up {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 10px;
+            
+        }
+
+        #search {
+            width : 100%;
+            height: 40px;
+            text-align: center
+        }
+
+        header .sub-menu {
+            justify-content: center
+        }
+
+        header .toggle {
+            display : none;
+        }
+
+        header .toggle.on{
+            display : block;
+        }
+
+        #toggle-btn {
+            display : block;
+        }
+
+/* VISUAL */
 .section-visual {
      background-image: url(../img/bg-small.jpg);
 }

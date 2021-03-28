@@ -44,6 +44,18 @@ a{
     background : #55a532 linear-gradient(#91dd70, #55ae2e);
 }
 
+#toggle-btn {
+    display: none;
+    background-image: url(../img/toggle-btn.svg);
+    width: 18px;
+    height : 24px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
 /* Input Text */
 .input-text{
     height : 34px;
