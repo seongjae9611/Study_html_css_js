@@ -2,7 +2,6 @@ const searchEl = document.querySelector('.search');
 const searchInputEl = searchEl.querySelector('input');
 
 searchEl.addEventListener('click',function(){
-    // Logic..
     searchInputEl.focus();
 });
 
@@ -22,8 +21,6 @@ const toTopEl = document.querySelector('#to_top');
 window.addEventListener('scroll',_.throttle(function() {
     console.log(window.scrollY);
     if(window.scrollY > 500) {
-        // 배지숨기기
-        // gsap.to(요소, 지속시간, 옵션);
         gsap.to(badgeEl, .6, {
             opacity: 0,
             display: 'none'
@@ -44,11 +41,27 @@ window.addEventListener('scroll',_.throttle(function() {
         });
     }
 }, 300));
-// _.throttle(함수, 시간)
+
+
+toTopEl.addEventListener('click', function() {
+    gsap.to(window, .7, {
+        scrollTo: 0
+    });
+});
+
+
+
+const fadeEls = document.querySelectorAll('.visual .fade_in');
+fadeEls.forEach(function(fadeEl, index) {
+    // gsap.to(요소, 지속시간, 옵션);
+    gsap.to(fadeEl, 1, {
+        delay: (index+1)*.7,
+        opacity: 1
+    });
+});
 
 
 // new Swiper(선택자, 옵션)
-
 new Swiper('.notice_line .swiper-container', {
     direction: 'vertical',
     autoplay: true,
@@ -87,29 +100,6 @@ new Swiper('.awards .swiper-container', {
 
 
 
-
-// toTopEl.addEventListener('click', function() {
-//     gsap.to(window, .7, {
-//         scrollTo: 0
-//     });
-// });
-
-
-
-const fadeEls = document.querySelectorAll('.visual .fade_in');
-fadeEls.forEach(function(fadeEl, index) {
-    // gsap.to(요소, 지속시간, 옵션);
-    gsap.to(fadeEl, 1, {
-        delay: (index+1)*.7, //0.7, 1.4, 2.1, 2.8
-        opacity: 1
-    });
-});
-
-
-
-
-
-
 const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle_promotion');
 let isHidePromotion = false;
@@ -136,7 +126,6 @@ function floatingObject(selector, delay, size) {
     gsap.to(
         selector, //선택자
         random(1.5, 2.5), { // 애니메이션 동작 시간
-            //옵션
         y: size,
         repeat: -1,
         yoyo: true,
@@ -160,6 +149,5 @@ spyEls.forEach(function(spyEl) {
 });
 
 
-//const thisYear = document.querySelector('.this_year');
-const thisYear = document.createElement('div');
+const thisYear = document.querySelector('.this_year');
 thisYear.textContent = new Date().getFullYear(); // 올해의 년도를 말함
