@@ -1008,10 +1008,15 @@ footer .inner .menu li {
     margin: auto;
 } */
 
+
 footer .inner .menu li a {
     color: #fff;
     font-size: 12px;
     margin-right: 30px;
+}
+
+footer .inner .menu li:last-child {
+    margin-right: 0;
 }
 
 footer .inner .menu li a:last-child {
